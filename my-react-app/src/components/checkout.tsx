@@ -43,6 +43,8 @@ function CheckoutWizard({ subtotal, onClose, onComplete, onLeaveFeedback }: Chec
           <h3>Payment</h3>
           <p>Demo only.</p>
           <input placeholder="Card number" value={card} onChange={(e) => setCard(e.target.value)} style={{ display: 'block', margin: '8px 0', padding: '8px', width: '300px' }} />
+          <input placeholder="CVV" value={card} onChange={(e) => setCard(e.target.value)} style={{ display: 'block', margin: '8px 0', padding: '8px', width: '300px' }} />
+          <input placeholder="Expiration date" value={card} onChange={(e) => setCard(e.target.value)} style={{ display: 'block', margin: '8px 0', padding: '8px', width: '300px' }} />
           <button onClick={() => setStep(0)} style={{ marginRight: '8px', padding: '8px 12px', cursor: 'pointer' }}>Back</button>
           <button onClick={() => setStep(2)} style={{ padding: '8px 12px', cursor: 'pointer' }}>
             Pay ${subtotal.toFixed(2)}
