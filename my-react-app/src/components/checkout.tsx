@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import NavbarCart from './navbar-cart.jsx'
 
 
 //Copilot helped with types
